@@ -1,20 +1,8 @@
 # PiClock
 ![image](https://github.com/dandydanny/PiClock/blob/master/PiClock_readme_image.jpg)
 
-
-
-
-
-
-
 ### What?
 Code that drives the Pimoroni Micro Dot pHAT with a current time display
-
-| Some | Data | In a Table |
-| ---: | :--: | :--------- |
-| A1 | 1 | Lorem ipsum |
-| B2 | 20000 | Much table, very cell |
-| FFFFFF | 255 | 255, 255, 255 values in CSS denotes white |
 
 ### Why?
 1. Retro 5x7 LED dot matrix display is cool
@@ -78,28 +66,18 @@ WantedBy=multi-user.target
 ```
 
 
-Enable service sudo systemctl enable clock.service
-Start clock for current boot only: sudo systemctl start clock.service
-Check if it's running: systemctl status clock.service
+Enable service: 
+`sudo systemctl enable clock.service`
 
+Start clock for current boot only:
+`sudo systemctl start clock.service`
+
+Check if it's running:
+`systemctl status clock.service`
 
 To select differnt time zone:
-tzselect
+`tzselect`
 
 
 ### About
 Daniel is a web developer seeking opportunities, beverage socials, and late-night taco runs. [dandydanny.github.io](https://git.io/vxurG)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
