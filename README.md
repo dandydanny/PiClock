@@ -67,15 +67,19 @@ WantedBy=multi-user.target
 
 
 Enable service: 
+
 `sudo systemctl enable clock.service`
 
 Start clock for current boot only:
+
 `sudo systemctl start clock.service`
 
 Check if it's running:
+
 `systemctl status clock.service`
 
 To select differnt time zone:
+
 `tzselect`
 
 
