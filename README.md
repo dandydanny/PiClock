@@ -10,7 +10,7 @@ Code that drives the Pimoroni Micro Dot pHAT with a current time display
 1. Raspberry Pi should display useful information
 
 ### Where?
-[This is a link to some demo](https://chrome.google.com/webstore/detail/dark-new-tab/mnjmegebbljjhpljjfjmkhgmokpmdbpo?hl=en-US&gl=US)
+In my Raspberry Pi.
 
 ### Setup
 #### Library Installation
