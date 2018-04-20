@@ -10,7 +10,7 @@ Make clock.service file.
 
 Put in following
 
-
+```
 [Unit]
 Description=Get clock service running at boot
 After=mosquitto.service mysql.service
@@ -26,7 +26,7 @@ Group=volumio
 
 [Install]
 WantedBy=multi-user.target
-
+```
 
 Put clock source code in:
 /home/volumio/clock.py
