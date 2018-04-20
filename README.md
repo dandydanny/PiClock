@@ -2,31 +2,10 @@
 Code that drives the Pimoroni Micro Dot pHAT with a current time display
 
 
+### Library Installation
+```curl https://get.pimoroni.com/microdotphat | bash```
 
-
-In /etc/systemd/system
-
-Make clock.service file.
-
-Put in following
-
-```
-[Unit]
-Description=Get clock service running at boot
-After=mosquitto.service mysql.service
-
-[Service]
-ExecStart=/usr/bin/python3 /home/volumio/clock.py
-Restart=always
-StandardOutput=syslog
-StandardError=syslog
-SyslogIdentifier=clock
-User=volumio
-Group=volumio
-
-[Install]
-WantedBy=multi-user.target
-```
+### Clock Source Code
 
 Put clock source code in:
 /home/volumio/clock.py
@@ -50,10 +29,35 @@ while True:
     time.sleep(0.05)
 ```
 
+### Make Clock Automatically Run on Boot
 
-Enable it with: sudo systemctl enable clock.service
-Start it (this boot only) with: sudo systemctl start clock.service
-Find if it's running with: systemctl status clock.service
+In /etc/systemd/system
+Make clock.service file.
+
+Put in following:
+
+```
+[Unit]
+Description=Get clock service running at boot
+After=mosquitto.service mysql.service
+
+[Service]
+ExecStart=/usr/bin/python3 /home/volumio/clock.py
+Restart=always
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=clock
+User=volumio
+Group=volumio
+
+[Install]
+WantedBy=multi-user.target
+```
+
+
+Enable service sudo systemctl enable clock.service
+Start clock for current boot only: sudo systemctl start clock.service
+Check if it's running: systemctl status clock.service
 
 
 To select differnt time zone:
