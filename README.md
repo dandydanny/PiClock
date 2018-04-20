@@ -1,4 +1,5 @@
 # PiClock
+![image](https://github.com/dandydanny/PiClock/blob/master/PiClock_readme_image.jpg)
 Code that drives the Pimoroni Micro Dot pHAT with a current time display
 
 
