@@ -1,12 +1,34 @@
 # PiClock
 ![image](https://github.com/dandydanny/PiClock/blob/master/PiClock_readme_image.jpg)
+
+
+
+
+
+
+
+### What?
 Code that drives the Pimoroni Micro Dot pHAT with a current time display
 
+| Some | Data | In a Table |
+| ---: | :--: | :--------- |
+| A1 | 1 | Lorem ipsum |
+| B2 | 20000 | Much table, very cell |
+| FFFFFF | 255 | 255, 255, 255 values in CSS denotes white |
 
-### Library Installation
+### Why?
+1. Retro 5x7 LED dot matrix display is cool
+1. Clocks should have cool displays
+1. Raspberry Pi should display useful information
+
+### Where?
+[This is a link to some demo](https://chrome.google.com/webstore/detail/dark-new-tab/mnjmegebbljjhpljjfjmkhgmokpmdbpo?hl=en-US&gl=US)
+
+### Setup
+#### Library Installation
 ```curl https://get.pimoroni.com/microdotphat | bash```
 
-### Clock Source Code
+#### Clock Source Code
 
 Put clock source code in:
 /home/volumio/clock.py
@@ -30,7 +52,7 @@ while True:
     time.sleep(0.05)
 ```
 
-### Make Clock Automatically Run on Boot
+#### Make Clock Automatically Run on Boot
 
 In /etc/systemd/system
 Make clock.service file.
@@ -63,3 +85,21 @@ Check if it's running: systemctl status clock.service
 
 To select differnt time zone:
 tzselect
+
+
+### About
+Daniel is a web developer seeking opportunities, beverage socials, and late-night taco runs. [dandydanny.github.io](https://git.io/vxurG)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
