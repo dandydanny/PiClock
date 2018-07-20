@@ -42,8 +42,8 @@ while True:
 
 #### Make Clock Automatically Run on Boot
 
-In /etc/systemd/system
-Make clock.service file.
+In `/etc/systemd/system`
+Make `clock.service` file.
 
 Put in following:
 
